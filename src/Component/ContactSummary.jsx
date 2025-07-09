@@ -45,7 +45,7 @@ const ContactSummary = () => {
     >
       <Marquee items={items} />
       <div className="overflow-hidden font-light text-center contact-text-responsive">
-        <p className="text-3xl lg:8xl">
+        <p className="text-3xl lg:text-8xl">
           "Let's build a <br />
           <span className="font-normal">memorable</span>&
           <span className="italic">inspiring</span>
