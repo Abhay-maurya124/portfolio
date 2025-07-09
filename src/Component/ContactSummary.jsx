@@ -24,19 +24,22 @@ const ContactSummary = () => {
     "Contact us",
   ];
 
-  useGSAP(() => {
-    if (!containerRef.current) return;
+  useGSAP(
+    () => {
+      if (!containerRef.current) return;
 
-    gsap.to(containerRef.current, {
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "center center",
-        end: "+=880 center",
-        scrub: 0.5,
-        pin: true,
-      },
-    });
-  }, { scope: containerRef });
+      gsap.to(containerRef.current, {
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "center center",
+          end: "+=880 center",
+          scrub: 0.5,
+          pin: true,
+        },
+      });
+    },
+    { scope: containerRef }
+  );
 
   return (
     <section
@@ -44,8 +47,8 @@ const ContactSummary = () => {
       className="flex flex-col items-center justify-between min-h-screen gap-12 mt-16"
     >
       <Marquee items={items} />
-      <div className="overflow-hidden font-light text-center contact-text-responsive">
-        <p className="text-3xl lg:text-8xl">
+      <div className="overflow-hidden font-light text-center">
+        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
           "Let's build a <br />
           <span className="font-normal">memorable</span>&
           <span className="italic">inspiring</span>
