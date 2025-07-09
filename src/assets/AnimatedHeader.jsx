@@ -36,7 +36,7 @@ const AnimatedHeader = ({
       "<+0.2"
     );
   }, []);
-const titleSize = isMobile?"text-3xl":"text-6xl"
+const titleSize = isMobile?"text-3xl":"text-8xl"
 const tracking = isMobile?"tracking-[0.3rem]":"tracking-[0.5rem]"
   return (
     <div ref={contextRef} className="relative h-full flex flex-col justify-end">
