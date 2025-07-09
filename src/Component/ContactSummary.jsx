@@ -48,13 +48,12 @@ const ContactSummary = () => {
     >
       <Marquee items={items} />
       <div className="overflow-hidden font-light text-center">
-        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
+        <p className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl">
           "Let's build a <br />
           <span className="font-normal">memorable</span>&
           <span className="italic">inspiring</span>
           <br />
-          web Application
-          <span className="text-gold">together</span>
+          web Application & <span className="text-gold">together</span>
         </p>
       </div>
       <Marquee
